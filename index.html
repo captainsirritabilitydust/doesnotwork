@@ -24,12 +24,11 @@
             margin: 10px;
             overflow: hidden;
             position: relative;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: box-shadow 0.3s;
             width: 300px;
         }
         .tile:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transform: translateY(-10px);
+            box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.5), 0 0 20px 5px rgba(255, 0, 123, 0.5);
         }
         .tile img {
             width: 100%;
@@ -85,6 +84,24 @@
             background: #0056b3;
             transform: scale(1.05);
         }
+        .pricing-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .pricing-table th {
+            background: #007BFF;
+            color: white;
+        }
+        .pricing-table td {
+            background: rgba(255, 255, 255, 0.8);
+        }
     </style>
 </head>
 <body>
@@ -96,46 +113,66 @@
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button class="get-started">Get Started</button>
     </div>
     <div class="container">
         <div class="tile">
-            <img src="1.jpg" alt="AI Solutions">
+            <img src="https://via.placeholder.com/300x200" alt="AI Solutions">
             <div class="tile-content">
                 <h2>Innovative AI Solutions</h2>
                 <p>Discover cutting-edge AI solutions tailored to your business needs.</p>
             </div>
         </div>
         <div class="tile">
-            <img src="2.jpg" alt="AI Research">
+            <img src="https://via.placeholder.com/300x200" alt="AI Research">
             <div class="tile-content">
                 <h2>Advanced AI Research</h2>
                 <p>Stay ahead with our latest AI research and development projects.</p>
             </div>
         </div>
         <div class="tile">
-            <img src="3.jpg" alt="AI Integration">
+            <img src="https://via.placeholder.com/300x200" alt="AI Integration">
             <div class="tile-content">
                 <h2>Seamless AI Integration</h2>
                 <p>Integrate AI seamlessly into your existing systems and workflows.</p>
             </div>
         </div>
         <div class="tile">
-            <img src="4.jpg" alt="AI Consulting">
+            <img src="https://via.placeholder.com/300x200" alt="AI Consulting">
             <div class="tile-content">
                 <h2>Expert AI Consulting</h2>
                 <p>Get expert advice and consulting services to leverage AI in your business.</p>
             </div>
         </div>
         <div class="tile">
-            <img src="5.jpg" alt="AI Training">
+            <img src="https://via.placeholder.com/300x200" alt="AI Training">
             <div class="tile-content">
                 <h2>Comprehensive AI Training</h2>
                 <p>Empower your team with comprehensive AI training programs.</p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <button class="get-started">Get Started</button>
-    </div>
+    <table class="pricing-table">
+        <tr>
+            <th>Plan</th>
+            <th>Features</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>Access to basic AI tools and resources</td>
+            <td>$19/month</td>
+        </tr>
+        <tr>
+            <td>Pro</td>
+            <td>All features of Basic plus advanced analytics</td>
+            <td>$49/month</td>
+        </tr>
+        <tr>
+            <td>Enterprise</td>
+            <td>All features of Pro plus dedicated support</td>
+            <td>$99/month</td>
+        </tr>
+    </table>
 </body>
 </html>
