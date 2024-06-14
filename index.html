@@ -6,14 +6,14 @@
     <title>doe.ai - Create Your Own Chatbots Hassle-Free</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #007BFF;
+            background-color: #6EC1E4;
             color: white;
             padding: 1rem 0;
             text-align: center;
@@ -22,44 +22,56 @@
             color: white;
             margin: 0 1rem;
             text-decoration: none;
+            font-weight: bold;
         }
         .hero {
-            background-color: #007BFF;
+            background-color: #6EC1E4;
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
         }
         .hero h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin: 1rem 0;
         }
         .hero button {
             background-color: white;
-            color: #007BFF;
+            color: #6EC1E4;
             border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.2rem;
             cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #e0f7ff;
         }
         .section {
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             text-align: center;
         }
         .section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
         .section p {
-            font-size: 1rem;
-            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
         }
         .features, .how-it-works, .testimonials, .pricing, .contact {
             background-color: white;
             margin: 1rem 0;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .features .feature-item, .how-it-works .step-item, .testimonials .testimonial-item, .pricing .plan-item {
+            margin-bottom: 2rem;
         }
         .footer {
             background-color: #333;
@@ -90,23 +102,66 @@
     </section>
     <section class="features section">
         <h2>Features</h2>
-        <p>Highlight key features of doe.ai</p>
+        <div class="feature-item">
+            <h3>Easy to Use</h3>
+            <p>Our platform is designed to be user-friendly, allowing you to create chatbots with ease.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Customizable</h3>
+            <p>Personalize your chatbots to match your brand's voice and style.</p>
+        </div>
+        <div class="feature-item">
+            <h3>24/7 Support</h3>
+            <p>We offer round-the-clock support to help you with any issues you may encounter.</p>
+        </div>
     </section>
     <section class="how-it-works section">
         <h2>How It Works</h2>
-        <p>Simple steps to create a chatbot</p>
+        <div class="step-item">
+            <h3>Step 1: Sign Up</h3>
+            <p>Create an account to get started with doe.ai.</p>
+        </div>
+        <div class="step-item">
+            <h3>Step 2: Customize</h3>
+            <p>Use our intuitive tools to design and customize your chatbot.</p>
+        </div>
+        <div class="step-item">
+            <h3>Step 3: Deploy</h3>
+            <p>Deploy your chatbot on your website or app and start engaging with your users.</p>
+        </div>
     </section>
     <section class="testimonials section">
         <h2>Testimonials</h2>
-        <p>User feedback</p>
+        <div class="testimonial-item">
+            <p>"doe.ai has transformed the way we interact with our customers. It's incredibly easy to use and the support team is fantastic!" - Jane Doe, CEO of TechCorp</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"The customization options are amazing. We were able to create a chatbot that perfectly matches our brand." - John Smith, Marketing Director at WebSolutions</p>
+        </div>
     </section>
     <section class="pricing section">
         <h2>Pricing</h2>
-        <p>Different plans</p>
+        <div class="plan-item">
+            <h3>Basic Plan</h3>
+            <p>Perfect for small businesses. Includes all essential features.</p>
+            <p><strong>$19/month</strong></p>
+        </div>
+        <div class="plan-item">
+            <h3>Pro Plan</h3>
+            <p>Ideal for growing businesses. Includes advanced features and priority support.</p>
+            <p><strong>$49/month</strong></p>
+        </div>
+        <div class="plan-item">
+            <h3>Enterprise Plan</h3>
+            <p>For large organizations. Includes all features and dedicated support.</p>
+            <p><strong>Contact us for pricing</strong></p>
+        </div>
     </section>
     <section class="contact section">
         <h2>Contact</h2>
-        <p>Contact form or details</p>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <p>Email: support@doe.ai</p>
+        <p>Phone: (123) 456-7890</p>
     </section>
     <footer class="footer">
         <p>&copy; 2024 doe.ai. All rights reserved.</p>
