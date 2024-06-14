@@ -3,117 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>doe.ai - AI Chatbots Made Simple</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Doe.ai - AI Chatbots Made Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .grid-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .grid-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .grid-item p {
+            font-size: 1em;
+            color: #666;
+        }
+        .pricing {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .pricing h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .pricing p {
+            font-size: 1em;
+            color: #666;
+        }
+        .pricing ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing ul li {
+            margin: 10px 0;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact p {
+            font-size: 1em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>AI Chatbots Made Simple – Your Bot, Your Way!</h1>
-        <p>Welcome to Doe.ai, where creating your own AI chatbot is as easy as 1-2-3!</p>
-        <button>Get Started</button>
-    </section>
-    <section class="about section">
-        <h2>About Us</h2>
-        <p>At Doe.ai, we believe that everyone should have the power to create their own AI chatbots, regardless of their technical expertise. Our mission is to simplify the process and make advanced technology accessible to all. With a user-friendly platform and a variety of pricing options, we are committed to helping you bring your chatbot vision to life effortlessly.</p>
-    </section>
-    <section class="features section">
-        <h2>Features</h2>
-        <div class="card-container">
-            <div class="card large">
-                <h3>Easy to Use</h3>
-                <p>Our platform is designed to be user-friendly, allowing you to create chatbots with ease.</p>
+    <div class="container">
+        <div class="header">
+            <h1>AI Chatbots Made Simple – Your Bot, Your Way!</h1>
+            <p>Welcome to Doe.ai, where creating your own AI chatbot is as easy as 1-2-3!</p>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <h2>About Us</h2>
+                <p>At Doe.ai, we believe that everyone should have the power to create their own AI chatbots, regardless of their technical expertise. Our mission is to simplify the process and make advanced technology accessible to all.</p>
             </div>
-            <div class="card medium">
-                <h3>Customizable</h3>
-                <p>Personalize your chatbots to match your brand's voice and style.</p>
+            <div class="grid-item">
+                <h2>FAQs</h2>
+                <p><strong>Q: Do I need any coding skills to create a chatbot on Doe.ai?</strong><br>A: No coding skills are required! Our platform is designed to be user-friendly and intuitive, making it easy for anyone to create a chatbot.</p>
+                <p><strong>Q: What are the limitations of the free tier?</strong><br>A: The free tier allows you to create and publish a chatbot with some limitations on features and usage. For more advanced capabilities, you can explore our paid plans.</p>
+                <p><strong>Q: How long does it take to create a chatbot?</strong><br>A: You can create and publish your chatbot in just a few simple steps, making the process quick and hassle-free.</p>
             </div>
-            <div class="card small">
-                <h3>24/7 Support</h3>
-                <p>We offer round-the-clock support to help you with any issues you may encounter.</p>
+            <div class="grid-item pricing">
+                <h2>Pricing Plans</h2>
+                <h3>Free Tier</h3>
+                <p>Price: $0/month</p>
+                <ul>
+                    <li>Create and publish one chatbot</li>
+                    <li>Basic customization options</li>
+                    <li>Limited to 500 interactions per month</li>
+                    <li>Access to community support</li>
+                    <li>Basic analytics</li>
+                </ul>
+                <h3>Pro Tier</h3>
+                <p>Price: $29/month</p>
+                <ul>
+                    <li>Create and publish up to 5 chatbots</li>
+                    <li>Advanced customization options</li>
+                    <li>Unlimited interactions</li>
+                    <li>Priority email support</li>
+                    <li>Detailed analytics and reporting</li>
+                    <li>Integration with third-party services</li>
+                </ul>
+                <h3>Enterprise Tier</h3>
+                <p>Price: Custom pricing</p>
+                <ul>
+                    <li>Unlimited chatbots</li>
+                    <li>Full customization and branding options</li>
+                    <li>Unlimited interactions</li>
+                    <li>Dedicated account manager</li>
+                    <li>24/7 premium support</li>
+                    <li>Comprehensive analytics and insights</li>
+                    <li>Custom integrations and API access</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <section class="how-it-works section">
-        <h2>How It Works</h2>
-        <div class="card-container">
-            <div class="card medium">
-                <h3>Step 1: Sign Up</h3>
-                <p>Create an account to get started with Doe.ai.</p>
-            </div>
-            <div class="card small">
-                <h3>Step 2: Customize</h3>
-                <p>Use our intuitive tools to design and customize your chatbot.</p>
-            </div>
-            <div class="card large">
-                <h3>Step 3: Deploy</h3>
-                <p>Deploy your chatbot on your website or app and start engaging with your users.</p>
-            </div>
+        <div class="contact">
+            <p>Have questions or need assistance? Our support team is here to help! Reach out to us at <a href="mailto:support@doe.ai">support@doe.ai</a>, and we'll get back to you as soon as possible.</p>
         </div>
-    </section>
-    <section class="testimonials section">
-        <h2>Testimonials</h2>
-        <div class="card-container">
-            <div class="card small">
-                <p>"Doe.ai has transformed the way we interact with our customers. It's incredibly easy to use and the support team is fantastic!" - Jane Doe, CEO of TechCorp</p>
-            </div>
-            <div class="card medium">
-                <p>"The customization options are amazing. We were able to create a chatbot that perfectly matches our brand." - John Smith, Marketing Director at WebSolutions</p>
-            </div>
-        </div>
-    </section>
-    <section class="pricing section">
-        <h2>Pricing</h2>
-        <div class="card-container">
-            <div class="card small">
-                <h3>Basic Plan</h3>
-                <p>Perfect for small businesses. Includes all essential features.</p>
-                <p><strong>$19/month</strong></p>
-            </div>
-            <div class="card medium">
-                <h3>Pro Plan</h3>
-                <p>Ideal for growing businesses. Includes advanced features and priority support.</p>
-                <p><strong>$49/month</strong></p>
-            </div>
-            <div class="card large">
-                <h3>Enterprise Plan</h3>
-                <p>For large organizations. Includes all features and dedicated support.</p>
-                <p><strong>Contact us for pricing</strong></p>
-            </div>
-        </div>
-    </section>
-    <section class="faqs section">
-        <h2>FAQs</h2>
-        <div class="card-container">
-            <div class="card small">
-                <h3>Q: Do I need any coding skills to create a chatbot on Doe.ai?</h3>
-                <p>A: No coding skills are required! Our platform is designed to be user-friendly and intuitive, making it easy for anyone to create a chatbot.</p>
-            </div>
-            <div class="card medium">
-                <h3>Q: What are the limitations of the free tier?</h3>
-                <p>A: The free tier allows you to create and publish a chatbot with some limitations on features and usage. For more advanced capabilities, you can explore our paid plans.</p>
-            </div>
-            <div class="card large">
-                <h3>Q: How long does it take to create a chatbot?</h3>
-                <p>A: You can create and publish your chatbot in just a few simple steps, making the process quick and hassle-free.</p>
-            </div>
-        </div>
-    </section>
-    <section class="contact section">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Our support team is here to help! Reach out to us at support@doe.ai, and we'll get back to you as soon as possible.</p>
-    </section>
-    <footer class="footer">
-        <p>&copy; 2024 doe.ai. All rights reserved.</p>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-    </footer>
+    </div>
 </body>
 </html>
