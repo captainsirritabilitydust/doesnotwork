@@ -29,6 +29,18 @@
         }
         .tile:hover {
             box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.5), 0 0 20px 5px rgba(255, 0, 123, 0.5);
+            animation: gradientShift 1s infinite;
+        }
+        @keyframes gradientShift {
+            0% {
+                box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.5), 0 0 20px 5px rgba(255, 0, 123, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px 5px rgba(123, 255, 0, 0.5), 0 0 20px 5px rgba(0, 123, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 20px 5px rgba(255, 0, 123, 0.5), 0 0 20px 5px rgba(123, 255, 0, 0.5);
+            }
         }
         .tile img {
             width: 100%;
@@ -85,22 +97,43 @@
             transform: scale(1.05);
         }
         .pricing-table {
-            width: 100%;
-            max-width: 800px;
+            display: flex;
+            justify-content: center;
             margin: 40px auto;
-            border-collapse: collapse;
+            width: 100%;
+            max-width: 1200px;
         }
-        .pricing-table th, .pricing-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .pricing-table th {
-            background: #007BFF;
-            color: white;
-        }
-        .pricing-table td {
+        .pricing-table .plan {
             background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .pricing-table .plan h3 {
+            background: #007BFF;
+            border-radius: 5px;
+            color: white;
+            margin: -20px -20px 20px;
+            padding: 10px;
+        }
+        .pricing-table .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-table .plan ul li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .pricing-table .plan .price {
+            background: #007BFF;
+            border-radius: 5px;
+            color: white;
+            font-size: 24px;
+            margin: 20px 0;
+            padding: 10px;
         }
     </style>
 </head>
@@ -152,27 +185,36 @@
             </div>
         </div>
     </div>
-    <table class="pricing-table">
-        <tr>
-            <th>Plan</th>
-            <th>Features</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Basic</td>
-            <td>Access to basic AI tools and resources</td>
-            <td>$19/month</td>
-        </tr>
-        <tr>
-            <td>Pro</td>
-            <td>All features of Basic plus advanced analytics</td>
-            <td>$49/month</td>
-        </tr>
-        <tr>
-            <td>Enterprise</td>
-            <td>All features of Pro plus dedicated support</td>
-            <td>$99/month</td>
-        </tr>
-    </table>
+    <div class="pricing-table">
+        <div class="plan">
+            <h3>Basic</h3>
+            <ul>
+                <li>Access to basic AI tools and resources</li>
+                <li>Email support</li>
+                <li>Community access</li>
+            </ul>
+            <div class="price">$19/month</div>
+        </div>
+        <div class="plan">
+            <h3>Pro</h3>
+            <ul>
+                <li>All features of Basic</li>
+                <li>Advanced analytics</li>
+                <li>Priority email support</li>
+                <li>Monthly webinars</li>
+            </ul>
+            <div class="price">$49/month</div>
+        </div>
+        <div class="plan">
+            <h3>Enterprise</h3>
+            <ul>
+                <li>All features of Pro</li>
+                <li>Dedicated support</li>
+                <li>Custom AI solutions</li>
+                <li>On-site training</li>
+            </ul>
+            <div class="price">$99/month</div>
+        </div>
+    </div>
 </body>
 </html>
