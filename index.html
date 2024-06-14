@@ -15,7 +15,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 100px 20px 20px;
         }
         .tile {
             background: rgba(255, 255, 255, 0.8);
@@ -51,6 +51,9 @@
             top: 0;
             width: 100%;
             z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .header h1 {
             margin: 0;
@@ -66,6 +69,21 @@
         }
         .header nav a:hover {
             color: #007BFF;
+        }
+        .get-started {
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .get-started:hover {
+            background: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -101,6 +119,23 @@
                 <p>Integrate AI seamlessly into your existing systems and workflows.</p>
             </div>
         </div>
+        <div class="tile">
+            <img src="4.jpg" alt="AI Consulting">
+            <div class="tile-content">
+                <h2>Expert AI Consulting</h2>
+                <p>Get expert advice and consulting services to leverage AI in your business.</p>
+            </div>
+        </div>
+        <div class="tile">
+            <img src="5.jpg" alt="AI Training">
+            <div class="tile-content">
+                <h2>Comprehensive AI Training</h2>
+                <p>Empower your team with comprehensive AI training programs.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <button class="get-started">Get Started</button>
     </div>
 </body>
 </html>
