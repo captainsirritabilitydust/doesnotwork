@@ -64,30 +64,87 @@
             margin-bottom: 1.5rem;
         }
         .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
+            padding: 1rem;
         }
         .card {
             background-color: white;
-            margin: 1rem;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            flex: 1 1 calc(33% - 2rem); /* Adjust width to fit three cards per row */
-            max-width: calc(33% - 2rem); /* Ensure cards don't exceed one-third of the container width */
-            background-color: #FFB6B9; /* Add a pastel color */
-            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
         }
-        /* Add different background colors for variety */
-        .card:nth-child(2n) {
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card:nth-child(1) {
+            background-color: #FFB6B9;
+        }
+        
+        .card:nth-child(2) {
             background-color: #FFDAC1;
         }
         
-        .card:nth-child(3n) {
+        .card:nth-child(3) {
             background-color: #E2F0CB;
+        }
+        
+        .card:nth-child(4) {
+            background-color: #B5EAD7;
+        }
+        
+        .card:nth-child(5) {
+            background-color: #C7CEEA;
+        }
+        
+        .card:nth-child(6) {
+            background-color: #FF9AA2;
+        }
+        
+        .card:nth-child(7) {
+            background-color: #FFB7B2;
+        }
+        
+        .card:nth-child(8) {
+            background-color: #FFDAC1;
+        }
+        
+        .card:nth-child(9) {
+            background-color: #E2F0CB;
+        }
+        
+        .card:nth-child(10) {
+            background-color: #B5EAD7;
+        }
+        
+        .card:nth-child(11) {
+            background-color: #C7CEEA;
+        }
+        
+        .card:nth-child(12) {
+            background-color: #FF9AA2;
+        }
+        
+        /* Adjust the card sizes for a more dynamic layout */
+        .card.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .card.medium {
+            grid-column: span 2;
+        }
+        
+        .card.small {
+            grid-column: span 1;
         }
         .card h3 {
             font-size: 1.5rem;
@@ -138,15 +195,15 @@
 <section class="features section">
     <h2>Features</h2>
     <div class="card-container">
-        <div class="card">
+        <div class="card large">
             <h3>Easy to Use</h3>
             <p>Our platform is designed to be user-friendly, allowing you to create chatbots with ease.</p>
         </div>
-        <div class="card">
+        <div class="card medium">
             <h3>Customizable</h3>
             <p>Personalize your chatbots to match your brand's voice and style.</p>
         </div>
-        <div class="card">
+        <div class="card small">
             <h3>24/7 Support</h3>
             <p>We offer round-the-clock support to help you with any issues you may encounter.</p>
         </div>
@@ -155,15 +212,15 @@
 <section class="how-it-works section">
     <h2>How It Works</h2>
     <div class="card-container">
-        <div class="card">
+        <div class="card medium">
             <h3>Step 1: Sign Up</h3>
             <p>Create an account to get started with Doe.ai.</p>
         </div>
-        <div class="card">
+        <div class="card small">
             <h3>Step 2: Customize</h3>
             <p>Use our intuitive tools to design and customize your chatbot.</p>
         </div>
-        <div class="card">
+        <div class="card large">
             <h3>Step 3: Deploy</h3>
             <p>Deploy your chatbot on your website or app and start engaging with your users.</p>
         </div>
@@ -172,10 +229,10 @@
 <section class="testimonials section">
     <h2>Testimonials</h2>
     <div class="card-container">
-        <div class="card">
+        <div class="card small">
             <p>"Doe.ai has transformed the way we interact with our customers. It's incredibly easy to use and the support team is fantastic!" - Jane Doe, CEO of TechCorp</p>
         </div>
-        <div class="card">
+        <div class="card medium">
             <p>"The customization options are amazing. We were able to create a chatbot that perfectly matches our brand." - John Smith, Marketing Director at WebSolutions</p>
         </div>
     </div>
@@ -183,17 +240,17 @@
 <section class="pricing section">
     <h2>Pricing</h2>
     <div class="card-container">
-        <div class="card">
+        <div class="card small">
             <h3>Basic Plan</h3>
             <p>Perfect for small businesses. Includes all essential features.</p>
             <p><strong>$19/month</strong></p>
         </div>
-        <div class="card">
+        <div class="card medium">
             <h3>Pro Plan</h3>
             <p>Ideal for growing businesses. Includes advanced features and priority support.</p>
             <p><strong>$49/month</strong></p>
         </div>
-        <div class="card">
+        <div class="card large">
             <h3>Enterprise Plan</h3>
             <p>For large organizations. Includes all features and dedicated support.</p>
             <p><strong>Contact us for pricing</strong></p>
@@ -203,20 +260,21 @@
 <section class="faqs section">
     <h2>FAQs</h2>
     <div class="card-container">
-        <div class="card">
+        <div class="card small">
             <h3>Q: Do I need any coding skills to create a chatbot on Doe.ai?</h3>
             <p>A: No coding skills are required! Our platform is designed to be user-friendly and intuitive, making it easy for anyone to create a chatbot.</p>
         </div>
-        <div class="card">
+        <div class="card medium">
             <h3>Q: What are the limitations of the free tier?</h3>
             <p>A: The free tier allows you to create and publish a chatbot with some limitations on features and usage. For more advanced capabilities, you can explore our paid plans.</p>
         </div>
-        <div class="card">
+        <div class="card large">
             <h3>Q: How long does it take to create a chatbot?</h3>
             <p>A: You can create and publish your chatbot in just a few simple steps, making the process quick and hassle-free.</p>
         </div>
     </div>
 </section>
+
     <section class="contact section">
         <h2>Contact Us</h2>
         <p>Have questions or need assistance? Our support team is here to help! Reach out to us at support@doe.ai, and we'll get back to you as soon as possible.</p>
