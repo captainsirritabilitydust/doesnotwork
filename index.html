@@ -12,130 +12,149 @@
             background-color: #f4f4f4;
         }
         .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .header {
-            text-align: center;
-            padding: 50px 0;
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
         }
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
         }
-        .header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .grid-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .grid-item h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .grid-item p {
-            font-size: 1em;
-            color: #666;
-        }
-        .pricing {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .pricing h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .pricing p {
-            font-size: 1em;
-            color: #666;
-        }
-        .pricing ul {
-            list-style: none;
+        header ul {
             padding: 0;
+            list-style: none;
         }
-        .pricing ul li {
-            margin: 10px 0;
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
         }
-        .contact {
+        .showcase {
+            min-height: 400px;
+            background: url('https://www.iphone14update.com/wp-content/uploads/2022/09/iphone-14-pro-max-1.jpg') no-repeat 0 -400px;
             text-align: center;
-            margin-top: 50px;
+            color: #fff;
         }
-        .contact p {
-            font-size: 1em;
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .boxes {
+            margin-top: 20px;
+        }
+        .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        .box img {
+            width: 90px;
+        }
+        .box h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .box p {
             color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Doe.ai</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase" id="home">
+        <div class="container">
             <h1>AI Chatbots Made Simple – Your Bot, Your Way!</h1>
             <p>Welcome to Doe.ai, where creating your own AI chatbot is as easy as 1-2-3!</p>
         </div>
-        <div class="grid">
-            <div class="grid-item">
-                <h2>About Us</h2>
-                <p>At Doe.ai, we believe that everyone should have the power to create their own AI chatbots, regardless of their technical expertise. Our mission is to simplify the process and make advanced technology accessible to all.</p>
+    </section>
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="1.jpg" alt="New colors">
+                <h3>New colors</h3>
+                <p>Explore our flexible pricing plans tailored to suit your needs.</p>
             </div>
-            <div class="grid-item">
-                <h2>FAQs</h2>
-                <p><strong>Q: Do I need any coding skills to create a chatbot on Doe.ai?</strong><br>A: No coding skills are required! Our platform is designed to be user-friendly and intuitive, making it easy for anyone to create a chatbot.</p>
-                <p><strong>Q: What are the limitations of the free tier?</strong><br>A: The free tier allows you to create and publish a chatbot with some limitations on features and usage. For more advanced capabilities, you can explore our paid plans.</p>
-                <p><strong>Q: How long does it take to create a chatbot?</strong><br>A: You can create and publish your chatbot in just a few simple steps, making the process quick and hassle-free.</p>
+            <div class="box">
+                <img src="2.jpg" alt="Powerful GPU">
+                <h3>Powerful GPU</h3>
+                <p>Join the Doe.ai community today and experience the future of AI chatbots.</p>
             </div>
-            <div class="grid-item pricing">
-                <h2>Pricing Plans</h2>
-                <h3>Free Tier</h3>
-                <p>Price: $0/month</p>
-                <ul>
-                    <li>Create and publish one chatbot</li>
-                    <li>Basic customization options</li>
-                    <li>Limited to 500 interactions per month</li>
-                    <li>Access to community support</li>
-                    <li>Basic analytics</li>
-                </ul>
-                <h3>Pro Tier</h3>
-                <p>Price: $29/month</p>
-                <ul>
-                    <li>Create and publish up to 5 chatbots</li>
-                    <li>Advanced customization options</li>
-                    <li>Unlimited interactions</li>
-                    <li>Priority email support</li>
-                    <li>Detailed analytics and reporting</li>
-                    <li>Integration with third-party services</li>
-                </ul>
-                <h3>Enterprise Tier</h3>
-                <p>Price: Custom pricing</p>
-                <ul>
-                    <li>Unlimited chatbots</li>
-                    <li>Full customization and branding options</li>
-                    <li>Unlimited interactions</li>
-                    <li>Dedicated account manager</li>
-                    <li>24/7 premium support</li>
-                    <li>Comprehensive analytics and insights</li>
-                    <li>Custom integrations and API access</li>
-                </ul>
+            <div class="box">
+                <img src="3.jpg" alt="Two new sizes">
+                <h3>Two new sizes</h3>
+                <p>Our platform empowers you to design, build, and publish your chatbot in just a few simple steps.</p>
             </div>
         </div>
-        <div class="contact">
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Doe.ai, we believe that everyone should have the power to create their own AI chatbots, regardless of their technical expertise. Our mission is to simplify the process and make advanced technology accessible to all. With a user-friendly platform and a variety of pricing options, we are committed to helping you bring your chatbot vision to life effortlessly.</p>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <h3>Free Tier</h3>
+            <p><strong>Price:</strong> $0/month</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Create and publish one chatbot</li>
+                <li>Basic customization options</li>
+                <li>Limited to 500 interactions per month</li>
+                <li>Access to community support</li>
+                <li>Basic analytics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
             <p>Have questions or need assistance? Our support team is here to help! Reach out to us at <a href="mailto:support@doe.ai">support@doe.ai</a>, and we'll get back to you as soon as possible.</p>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>Doe.ai &copy; 2024</p>
+    </footer>
 </body>
 </html>
