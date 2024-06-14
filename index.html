@@ -63,6 +63,12 @@
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
         .card {
             background-color: white;
             margin: 1rem;
@@ -70,6 +76,18 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: left;
+            flex: 1 1 calc(33% - 2rem); /* Adjust width to fit three cards per row */
+            max-width: calc(33% - 2rem); /* Ensure cards don't exceed one-third of the container width */
+            background-color: #FFB6B9; /* Add a pastel color */
+            color: #333;
+        }
+        /* Add different background colors for variety */
+        .card:nth-child(2n) {
+            background-color: #FFDAC1;
+        }
+        
+        .card:nth-child(3n) {
+            background-color: #E2F0CB;
         }
         .card h3 {
             font-size: 1.5rem;
@@ -117,8 +135,9 @@
         <h2>About Us</h2>
         <p>At Doe.ai, we believe that everyone should have the power to create their own AI chatbots, regardless of their technical expertise. Our mission is to simplify the process and make advanced technology accessible to all. With a user-friendly platform and a variety of pricing options, we are committed to helping you bring your chatbot vision to life effortlessly.</p>
     </section>
-    <section class="features section">
-        <h2>Features</h2>
+<section class="features section">
+    <h2>Features</h2>
+    <div class="card-container">
         <div class="card">
             <h3>Easy to Use</h3>
             <p>Our platform is designed to be user-friendly, allowing you to create chatbots with ease.</p>
@@ -131,9 +150,11 @@
             <h3>24/7 Support</h3>
             <p>We offer round-the-clock support to help you with any issues you may encounter.</p>
         </div>
-    </section>
-    <section class="how-it-works section">
-        <h2>How It Works</h2>
+    </div>
+</section>
+<section class="how-it-works section">
+    <h2>How It Works</h2>
+    <div class="card-container">
         <div class="card">
             <h3>Step 1: Sign Up</h3>
             <p>Create an account to get started with Doe.ai.</p>
@@ -146,18 +167,22 @@
             <h3>Step 3: Deploy</h3>
             <p>Deploy your chatbot on your website or app and start engaging with your users.</p>
         </div>
-    </section>
-    <section class="testimonials section">
-        <h2>Testimonials</h2>
+    </div>
+</section>
+<section class="testimonials section">
+    <h2>Testimonials</h2>
+    <div class="card-container">
         <div class="card">
             <p>"Doe.ai has transformed the way we interact with our customers. It's incredibly easy to use and the support team is fantastic!" - Jane Doe, CEO of TechCorp</p>
         </div>
         <div class="card">
             <p>"The customization options are amazing. We were able to create a chatbot that perfectly matches our brand." - John Smith, Marketing Director at WebSolutions</p>
         </div>
-    </section>
-    <section class="pricing section">
-        <h2>Pricing</h2>
+    </div>
+</section>
+<section class="pricing section">
+    <h2>Pricing</h2>
+    <div class="card-container">
         <div class="card">
             <h3>Basic Plan</h3>
             <p>Perfect for small businesses. Includes all essential features.</p>
@@ -173,9 +198,11 @@
             <p>For large organizations. Includes all features and dedicated support.</p>
             <p><strong>Contact us for pricing</strong></p>
         </div>
-    </section>
-    <section class="faqs section">
-        <h2>FAQs</h2>
+    </div>
+</section>
+<section class="faqs section">
+    <h2>FAQs</h2>
+    <div class="card-container">
         <div class="card">
             <h3>Q: Do I need any coding skills to create a chatbot on Doe.ai?</h3>
             <p>A: No coding skills are required! Our platform is designed to be user-friendly and intuitive, making it easy for anyone to create a chatbot.</p>
@@ -188,7 +215,8 @@
             <h3>Q: How long does it take to create a chatbot?</h3>
             <p>A: You can create and publish your chatbot in just a few simple steps, making the process quick and hassle-free.</p>
         </div>
-    </section>
+    </div>
+</section>
     <section class="contact section">
         <h2>Contact Us</h2>
         <p>Have questions or need assistance? Our support team is here to help! Reach out to us at support@doe.ai, and we'll get back to you as soon as possible.</p>
